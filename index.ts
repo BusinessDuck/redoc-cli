@@ -13,7 +13,7 @@ import * as zlib from 'zlib';
 // @ts-ignore
 import { createStore, loadAndBundleSpec, Redoc } from 'redoc';
 
-import {watch} from 'chokidar';
+import { watch } from 'chokidar';
 import { createReadStream, existsSync, readFileSync, ReadStream, writeFileSync } from 'fs';
 import * as mkdirp from 'mkdirp';
 
@@ -132,7 +132,7 @@ YargsParser.command(
     describe: 'ReDoc options, use dot notation, e.g. options.nativeScrollbars',
   }).argv;
 
-async function serve(port: number, pathToSpec: string, options: Options = {}) {
+async function serve(port: any, pathToSpec: any, options: any = {}) {
   let spec = await loadAndBundleSpec(pathToSpec);
   let pageHTML = await getPageHTML(spec, pathToSpec, options);
 
@@ -184,13 +184,14 @@ async function serve(port: number, pathToSpec: string, options: Options = {}) {
           log('Updated successfully');
         } catch (e) {
           console.error('Error while updating: ', e.message);
-        }})
+        }
+      })
       .on('error', error => console.error(`Watcher error: ${error}`))
       .on('ready', () => log(`👀  Watching ${pathToSpecDirectory} for changes...`));
   }
 }
 
-async function bundle(pathToSpec, options: Options = {}) {
+async function bundle(pathToSpec, options: any = {}) {
   const start = Date.now();
   const spec = await loadAndBundleSpec(pathToSpec);
   const pageHTML = await getPageHTML(spec, pathToSpec, { ...options, ssr: true });
