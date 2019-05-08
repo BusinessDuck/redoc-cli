@@ -8,17 +8,17 @@
   "author": "Roman Hotsiy <gotsijroman@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "chokidar": "^2.0.4",
+    "chokidar": "^3.0.0",
     "handlebars": "^4.0.11",
     "isarray": "^2.0.4",
     "mkdirp": "^0.5.1",
-    "mobx": "^4.2.0",
+    "mobx": "^5.9.4",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "redoc": "github:BusinessDuck/ReDoc#master",
     "styled-components": "^4.1.1",
     "tslib": "^1.9.3",
-    "yargs": "^12.0.5",
+    "yargs": "^13.2.2",
     "node-fetch-h2": "^2.3.1-0",
     "builtin-status-codes": "^3.0.0",
     "to-arraybuffer": "^1.0.1"
@@ -30,7 +30,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@types/chokidar": "^1.7.5",
+    "@types/chokidar": "^2.1.3",
     "@types/handlebars": "^4.0.39",
     "@types/mkdirp": "^0.5.2",
     "ci-publish": "^1.3.1"
