@@ -15,7 +15,7 @@
     "mobx": "^5.9.4",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "redoc": "github:BusinessDuck/ReDoc#master",
+    "redoc": "github:BusinessDuck/ReDoc#upd",
     "styled-components": "^4.1.1",
     "tslib": "^1.9.3",
     "yargs": "^13.2.2",
